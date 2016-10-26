@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>day22</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <servlet-name>CheckUserNameIsExistServlet</servlet-name>
+    <servlet-class>com.pc.ajax.login.web.servlet.CheckUserNameIsExistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckUserNameIsExistServlet</servlet-name>
+    <url-pattern>/CheckUserNameIsExistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestJSONServlet</display-name>
+    <servlet-name>TestJSONServlet</servlet-name>
+    <servlet-class>com.pc.ajax.login.web.servlet.TestJSONServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestJSONServlet</servlet-name>
+    <url-pattern>/TestJSONServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchTextServlet</display-name>
+    <servlet-name>SearchTextServlet</servlet-name>
+    <servlet-class>com.pc.ajax.login.web.servlet.SearchTextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchTextServlet</servlet-name>
+    <url-pattern>/SearchTextServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
